@@ -1,0 +1,33 @@
+.Navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.Navbar .__a{
+    padding: 10px;
+}
+.Navbar .item{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 1rem;
+    
+}
+.Navbar .item a{
+    text-decoration: none;
+    color: inherit;
+}
+.Navbar .item input{
+    flex: 2;
+    padding: 10px 15px;
+    outline: none;
+    border-radius: 4px;
+    border: 1px solid darkgray;
+    width: 100%;
+
+}
+.Navbar .item .input{
+    flex: 2;
+    width: 100%;
+}

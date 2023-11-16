@@ -1,0 +1,55 @@
+.Register{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+}
+.Register form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 500px;
+    box-shadow: 4px 10px 15px 5px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+}
+.Register form .wrapper{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+
+}
+.Register form .wrapper .__a{
+    display: flex;
+    flex-direction: column;
+}
+.Register .__a{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.Register .__a input{
+    padding: 10px 15px;
+    width: 100%;
+    outline: none;
+    border: 1px solid darkgray;
+}
+.Register .__b{
+    margin-top: 10px;
+}
+
+.Register .__a label{
+    position: absolute;
+    font-size: 16px;
+    transition: transform 0.3s ease-out, font-size 0.3s ease-out;
+    top: 10px;
+    left: 5px;
+}
+.Register input:focus + label,
+.Register input:not(:placeholder-shown) + label {
+  transform: translateY(-28px);
+  font-size: 14px;
+}
+.Register form .error{
+    color: #f5222d;
+}
